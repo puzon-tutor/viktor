@@ -10,11 +10,17 @@ There were next tasks
  5. Define a class with a generator which can iterate the numbers, which are divisible by 7, between a given range 0 and n.
 """
 import helpers
-
+from sys import argv
 if __name__=='__main__':
 
     # Checking...
 
+    if len(argv)==2 and argv[1]=='--help':
+
+        print(__doc__)
+    print('=======================================================================')
+    print('Here are the answers...')
+    print('=======================================================================')
     print('The answer of 1st task is', helpers.sqtuple())
 
     print('The answer of 2nd task is',list(filter(helpers.even,range(1,11))))
